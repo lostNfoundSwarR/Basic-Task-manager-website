@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* TODO: Fix the coloring and color scheming of the website */
+
+* {
+     scrollbar-width: thin;
+     scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.1); /* Firefox */
+     font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+     width: 8px;
+     height: 8px;
+}
+
+::-webkit-scrollbar-track {
+     background: rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: rgba(0, 0, 0, 0.4);
+     border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+     background-color: #202020;
+     color: #fff;
+     margin: 0;
+     padding: 50px;
+     overflow: scroll;
+}
+
+.container .top {
+     margin-bottom: 20px;
+}
+
+.container .top #createButton {
+     font-size: 1.3rem;
+     padding: 5px;
+     border-radius: 20px;
+     margin: 10px;
+     font-weight: 600;
+     background-color: #fff;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+}
+
+.container .top #createButton:hover {
+     background-color: #ebeaea;
+}
+
+.container .top #createButton:active {
+     background-color: #eecece;
+}
+
+.container .top #listNameInput {
+     font-size: 1.5rem;
+     border-radius: 10px;
+     padding: 5px;
+     font-weight: 600;
+     border: 5px solid;
+}
+
+.container .top #addListButton {
+     font-size: 1.5rem;
+     font-weight: 600;
+     border-radius: 50px;
+     background-color: #069247;
+     color: #fff;
+     border: 5px solid;
+     border-color: #000;
+     cursor: pointer;
+}
+
+.container .top #addListButton:hover {
+     background-color: #038540;
+}
+
+.container .top #addListButton:active {
+     background-color: #02793a;
+}
+
+.card {
+     background: #303030; 
+     padding: 20px;
+     border-radius: 20px;
+     margin-top: 10px;
+     margin: auto;
+     display: flex;    
+     justify-content: space-around;
+     gap: 50px;
+     width: fit-content;
+     overflow: auto;
+}
+
+.listContainer {
+     list-style: none;
+     font-size: 1.4rem;
+     display: flex;
+     max-width: 450px;
+     min-width: 450px;
+     flex-direction: column;
+     gap: 15px;
+     border: 2px solid;
+     padding: 20px;
+     background: #bfbfbf53;
+     border-radius: 10px;
+     height: 400px;
+     overflow: auto;
+     word-break: break-all;
+}
+
+.listName {
+     font-size: 1.6rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+ }
+ 
+
+.listContainer .task {
+     display: flex;
+     border: 2px solid #000;
+     padding: 15px;
+     border-radius: 50px;
+     background: #28252c;
+     color: #fffafa;
+     font-weight: 600;
+     width: 400px;
+     word-wrap: break-word;
+     transition: 0.5s ease-in-out;
+     justify-content: space-between;
+     word-break: break-all;
+}
+
+.listContainer .task:hover {
+     transform: scale(105%);
+}
+
+.listContainer .task .option-bar {
+     border-radius: 50%;
+     height: 20px;
+     width: 20px;
+     padding: 5px;
+     text-align: center;
+     transition: 0.3s ease-in-out;
+}
+
+.listContainer .task .option-bar:hover {
+     background-color: #dadfdf4e;
+}
+
+.listContainer .task .extraOptions {
+     position: absolute;
+     border: 2px solid;
+     list-style-type: none;
+     background: #535555;
+     right: 20px;
+     padding: 10px;
+     overflow: hidden;
+     animation: slideDown 0.5s;
+}
+
+.listContainer .task .extraOptions .option {
+     padding: 5px;
+     cursor: pointer;
+}    
+
+.listContainer .task .extraOptions .option:hover {
+     background-color: #757979;
+}
+
+.taskInput {
+     display: flex;
+     gap: 5px;
+}
+
+.listContainer .taskNameInput {
+     font-size: 1.4rem;
+     border-radius: 20px;
+     padding: 10px;
+     font-weight: 600;
+     border: 5px solid;
+}
+
+.listContainer .finalAddButton {
+     font-size: inherit;
+     border-radius: 10px;
+     font-weight: 600;
+     border: 3px solid;
+     background: #069247;
+     color: #fff;
+     border-color: #000;
+     cursor: pointer;
+     height: 80%;
+     margin-top: 5px;
+}
+
+.listContainer .finalAddButton:hover {
+     background: #038540;
+}
+
+.listContainer .finalAddButton:active {
+     background: #02793a;
+}
+
+.listContainer .taskAdder {
+     font-size: inherit;
+     background-color: rgba(255, 255, 255, 0.214);
+     padding: 10px;
+     border-radius: 50px;
+     border: 2px solid;
+     cursor: pointer;
+     transition: 0.5s ease-in-out;
+}
+
+.listContainer .taskAdder:hover {
+     transform: scale(105%);
+}
+
+.removeButton {
+     background-color: #f44336;
+     color: white;
+     border: 5px solid;
+     border-color: #000;
+     cursor: pointer;
+     padding: 5px;
+     border-radius: 10px;
+     margin-top: 10px;
+ }
+ 
+ .removeButton:hover {
+     background-color: #da190b;
+ }
+
+@media (max-width: 1348px) {
+     .card {
+          flex-wrap: wrap;
+          gap: 10px;
+     }
+}
+
+@keyframes slideDown {
+     from {height: 0%;}
+     to {height: 200%;}
+}
+
+@keyframes slideUp {
+     from {height: 200%;}
+     to {height: 0%;}
+}

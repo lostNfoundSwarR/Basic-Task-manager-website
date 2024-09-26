@@ -1,0 +1,56 @@
+<!-- Start of the container div -->
+<div class="container">
+     <!-- Start of the top div -->
+     <div class="top">
+          <!-- Create list button -->
+          <button id="createButton">Create list</button>
+
+          <!-- Input container for adding a new list -->
+          <span id="inputContainer" style="display: none;">
+               <!-- Input field for entering a list name -->
+               <input type="text" id="listNameInput" placeholder="Enter a list name" maxlength="50">
+
+               <!-- Button for adding a new list -->
+               <button id="addListButton">Add</button>
+          </span>
+     </div>
+
+     <!-- Div for displaying the to-do lists -->
+     <div class="card" style="display: none;">
+     </div>
+
+     <!-- Div for renaming a list -->
+     <div class="renameBoxContainer" style="display: none;">
+          <!-- Rename box -->
+          <div class="renameBox">
+               <!-- Input field for renaming a list -->
+               <input type="text" placeholder="Rename to" id="newName">
+
+               <!-- Button for renaming a list -->
+               <button id="renameButton">Rename</button>
+
+               <!-- Button for closing the rename box -->
+               <button id="closeButton">Close</button>
+          </div>
+     </div>
+
+     <!-- Div for moving a list -->
+     <div class="moveBoxContainer" style="display: none;">
+          <!-- Move box -->
+          <div class="moveBox">
+               <!-- Input field for moving a list -->
+               <input type="text" placeholder="Move To" id="newBoxInput">
+
+               <!-- Button for moving a list -->
+               <button id="moveButton">Move</button>
+
+               <!-- Button for closing the move box -->
+               <button id="closeButton2">Close</button>
+          </div>
+     </div>
+
+<!-- End of the container div -->
+</div>
+
+<!-- Link to the JavaScript file -->
+<script src="script.js"></script>

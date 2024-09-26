@@ -1,0 +1,105 @@
+.renameBoxContainer {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, 50%);
+}
+
+.renameBoxContainer .renameBox {
+     display: flex;
+     border: 2px solid;
+     padding: 20px;
+     gap: 10px;
+     border-radius: 10px;
+     background-color: rgba(56, 56, 53, 0.954);
+}
+
+.renameBoxContainer .renameBox #newName {
+     font-size: 1.3rem;
+     font-weight: 600;
+     border-radius: 10px;
+     border: 5px solid #000000;
+}
+
+.renameBoxContainer .renameBox #renameButton {
+     font-size: 1.2rem;
+     border: 5px solid;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     background-color: rgb(7, 152, 7);
+     color: #fff;
+     border-color: #000000;
+}
+
+.renameBoxContainer .renameBox #renameButton:hover {
+     background-color: rgb(3, 136, 3);
+}
+
+.renameBoxContainer .renameBox #closeButton {
+     font-size: 1.2rem;
+     border: 5px solid;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     background-color: rgb(211, 34, 7);
+     color: #fff;
+     border-color: #000000;
+}
+
+.renameBoxContainer .renameBox #closeButton:hover {
+     background-color: rgb(185, 29, 2);
+}
+
+.moveBoxContainer {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, 50%);
+}
+
+.moveBoxContainer .moveBox {
+     display: flex;
+     border: 2px solid;
+     padding: 20px;
+     gap: 10px;
+     border-radius: 10px;
+     background-color: rgba(56, 56, 53, 0.954);
+}
+
+.moveBoxContainer .moveBox #newBoxInput {
+     font-size: 1.3rem;
+     font-weight: 600;
+     border-radius: 10px;
+     border: 5px solid #000000;
+}
+
+.moveBoxContainer .moveBox #moveButton {
+     font-size: 1.2rem;
+     border: 5px solid;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     background-color: rgb(7, 152, 7);
+     color: #fff;
+     border-color: #000000;
+}
+
+.moveBoxContainer .moveBox #moveButton:hover {
+     background-color: rgb(3, 136, 3);
+}
+
+.moveBoxContainer .moveBox #closeButton2 {
+     font-size: 1.2rem;
+     border: 5px solid;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     background-color: rgb(211, 34, 7);
+     color: #fff;
+     border-color: #000000;
+}
+
+.moveBoxContainer .moveBox #closeButton2:hover {
+     background-color: rgb(185, 29, 2);
+}
